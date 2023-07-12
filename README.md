@@ -1,4 +1,3 @@
-![image](https://github.com/ChenKaiWinter/China-Mobile-Prac/assets/102282713/24f0f496-9915-4695-a61d-e77c61255fe0)# China-Mobile-Prac
 ## China Mobile Working Notes
 ### 2023.07.03
 [readme教程](https://blog.csdn.net/Strive_For_Future/article/details/120956016)  
