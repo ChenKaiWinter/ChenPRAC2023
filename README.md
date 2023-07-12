@@ -32,3 +32,30 @@
 * 根据用户号码自动关联历史投诉情况（升级投诉、重复投诉），以便快速定位投诉原因，尽可能压降重复投诉。<br>
 * 实现历史投诉快速统计功能：历史投诉区域聚类，并判断故障原因还是覆盖原因，覆盖原因问题点可作为年终/中期可研滚入。<br>
 * 实时地图显示：显示投诉定位、周边宏站点位、问题点定位等信息。<br>
+
+
+### 2023.07.12
+```
+def db_insert(db, p_table_name,p_dataframe):
+    #准备数据，将待插入的dataframe转成list,以便多值插入
+    columns_list = p_dataframe.columns.tolist()
+    tmp_list=np.array(p_dataframe).tolist()
+    
+    for i in range(len(columns_list)):
+        if columns_list[i] == "国家 省/市 区县":
+            columns_list[i] = '\"国家 省/市 区县\"'
+        elif bool(re.search(r'\d', columns_list[i])):
+            columns_list[i] = '\"' + columns_list[i] + '\"'
+    #print(columns_list)
+    #columns_list = ['投诉内容', '工单状态', '投诉处理意见', '投诉一级分类', '投诉二级分类', '投诉三级分类']
+    
+    #插入语句
+    sql_string='insert into {}({}) values({})'.format(p_table_name,','.join(columns_list),','.join(list(map(lambda x:':'+x ,columns_list))))
+    cursor = db.cursor()
+    try:
+        cursor.executemany(sql_string, tmp_list)
+    except Exception as e:
+        print(e)
+    cursor.close()
+    db.commit()
+```
