@@ -1,4 +1,4 @@
-# China-Mobile-Prac
+![image](https://github.com/ChenKaiWinter/China-Mobile-Prac/assets/102282713/24f0f496-9915-4695-a61d-e77c61255fe0)# China-Mobile-Prac
 ## China Mobile Working Notes
 ### 2023.07.03
 [readme教程](https://blog.csdn.net/Strive_For_Future/article/details/120956016)  
@@ -59,3 +59,13 @@ def db_insert(db, p_table_name,p_dataframe):
     cursor.close()
     db.commit()
 ```
+#### 厘米猫功能点<br>
+##### 投诉表（累加）<br>
+根据号码找出该号码下的历史投诉<br>
+根据地址找出地址相关的投诉（经纬度或者模糊匹配）<br>
+根据地址找出以该地址为中心找出相关的投诉（截取两位小数的经纬度范围内的投诉）<br>
+##### 工参表（更新）<br>
+与站址信息关联（基站工参，按照截取两位小数的经纬度范围）<br>
+##### 用量表（累加）<br>
+工参站址的性能波动情况，流量变化<br>
+##### 故障表（累加）<br>
