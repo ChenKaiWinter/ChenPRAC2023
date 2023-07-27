@@ -83,3 +83,5 @@ def db_insert(db, p_table_name,p_dataframe):
 查询信息冗余
 家宽投诉表 分开查询
 圆范围内的查询 可以选取通过栅格 还是范围匹配
+批量查询
+根据工参查业务量
