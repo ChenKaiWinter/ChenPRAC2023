@@ -10,3 +10,6 @@
 * 4.CmCat_Res为资源文件所在位置<br>
 * 5.CmCat_Ui为所有的UI文件所在位置<br>
 * 6.dist中含有打包之后的可执行文件
+# 注意：
+* 由于git限制大文件无法上传，可执行文件需要自行生成<br>
+* 语句：pyinstaller -F -w -i CmCat.ico core_code.py
