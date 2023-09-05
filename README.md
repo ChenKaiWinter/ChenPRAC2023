@@ -10,21 +10,3 @@
 * 4.CmCat_Res为资源文件所在位置<br>
 * 5.CmCat_Ui为所有的UI文件所在位置<br>
 * 6.dist中含有打包之后的可执行文件
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-# 注意事项：
-* 由于github上传文件的限制，可执行文件请手动生成
-* 代码：pyinstaller -F -w -i CmCat.ico core_code.py
->>>>>>> 17b7ddc15f02732c68d23346e9eca25f6e5c3fe7
-=======
-# 注意事项：
-* 由于github上传文件的限制，可执行文件请手动生成
-* 代码：pyinstaller -F -w -i CmCat.ico core_code.py
->>>>>>> 17b7ddc15f02732c68d23346e9eca25f6e5c3fe7
-=======
-# 注意事项：
-* 由于github上传文件的限制，可执行文件请手动生成
-* 代码：pyinstaller -F -w -i CmCat.ico core_code.py
->>>>>>> 17b7ddc15f02732c68d23346e9eca25f6e5c3fe7
