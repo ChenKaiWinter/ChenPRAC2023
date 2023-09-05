@@ -1,0 +1,8 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource prefix="/">
+    <file>CmCat_Res/CmCat.jpg</file>
+    <file>CmCat_Res/Map.jpg</file>
+    <file>CmCat_Res/5G.jpg</file>
+</qresource>
+</RCC>
